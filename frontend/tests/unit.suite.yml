@@ -1,0 +1,11 @@
+suite_namespace: frontend\tests\unit
+actor: UnitTester
+modules:
+    enabled:
+        - Asserts
+        - Yii2:
+            configFile: 'config/test.php'
+            part: orm
+            transaction: false
+            cleanup: false
+            entryScript: index-test.php
